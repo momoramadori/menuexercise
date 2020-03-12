@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    width: 100vw;
+    height: 60px;
+    position: fixed;
+    background-color: lightgrey;
+    font-family: 'Baloo Chettan 2', cursive;
+    text-align: center;
+}
+div {
+    padding: 10px;
+    display: inline-block;
+    height: 60px;
+}
+#logo {
+    height: 100%;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+ul,li {
+    display: inline-block;
+}
+a {
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(64, 88, 111);
+    position: relative;
+}
+a:hover::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: green;
+    left: 0;
+    bottom:-10px;
+}
